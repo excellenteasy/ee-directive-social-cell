@@ -1,0 +1,20 @@
+before_deploy:
+- grunt before-deploy
+after_deploy:
+- grunt after-deploy
+language: node_js
+node_js:
+- '0.10'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: info@excellenteasy.com
+  on:
+    all_branches: true
+    tags: true
+  api_key:
+    secure: HgnFUuZPp/ZdbaGVmjg+Up2fAcgFndFDxY7ukwCm1IqN+NOOIbRVknlaOF66FP2amvMaBF7MWuZ8PraXZEPvP4jVoy8wtoU76+jfEAOrNmxgFGBRl+N6+2sDALL2RoqGv4LqSLTkJzSac1/IHRiA10vi2suxsTx3oIr14Rw56mk=
+env:
+  global:
+    secure: jbninmrKfxCL0FmN2BkJVnW74FD1ug7glBjmY51QKdsaORZ5TTGelNzYAMUJsKUbLGnfliQpTae8er5Z1NPKP0TDgUAQmnzV9nUwwzgFqoNVlyqzj4DlfeT5VejxdintmnPvrWDYXs1I0iZU7sZ29xjJHbmIseO/J/gvkmjamvg=
